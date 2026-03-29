@@ -1,6 +1,6 @@
 {
     "name": "iobroker.mihome-vacuum-ai",
-    "version": "5.3.1-alpha.3",
+    "version": "5.3.1-alpha.4",
     "description": "Control your mihome vacuum cleaner with ioBroker (AI test fork with Dreame/X20 Max support)",
     "keywords": [
         "dreame",

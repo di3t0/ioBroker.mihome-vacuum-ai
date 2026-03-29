@@ -1,7 +1,7 @@
 {
     "common": {
         "name": "mihome-vacuum-ai",
-        "version": "5.3.1-alpha.3",
+        "version": "5.3.1-alpha.4",
         "news": {
             "5.3.0": {
                 "en": "update dependecies\nreplace request with axios\nfix login issues by replacing and moving code to XiaomiCloudConnector",
