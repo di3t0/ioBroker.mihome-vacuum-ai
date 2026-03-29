@@ -266,7 +266,7 @@
       "_id": "userfiles",
       "type": "meta",
       "common": {
-        "name": "User files for mihome-vacuum",
+        "name": "User files for mihome-vacuum-ai",
         "type": "meta.user"
       },
       "native": {}

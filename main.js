@@ -25,7 +25,7 @@ class MihomeVacuum extends utils.Adapter {
     constructor(options) {
         super({
             ...options,
-            name: 'mihome-vacuum',
+            name: 'mihome-vacuum-ai',
         });
         this.unsupportedFeatures = '|';
         this.on('ready', this.onReady.bind(this));
