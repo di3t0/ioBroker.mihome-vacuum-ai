@@ -49,10 +49,9 @@ class MihomeVacuum extends utils.Adapter {
             this.config.pingInterval = 10000;
         }
 
-        // @ts-expect-error var not defined
-        if (!this.config.token) {
-            this.log.warn('Token not specified!');
-            return;
+        const hasToken = !!this.config.token;
+        if (!hasToken) {
+            this.log.warn('Token not specified! Starting in discovery-only mode. Cloud discovery and admin actions stay available, local device control is disabled until a token is set.');
         }
         // create default States
         await Promise.all(
@@ -61,6 +60,12 @@ class MihomeVacuum extends utils.Adapter {
                 this.log.debug(`Create State for deviceInfo${o._id}`);
             }),
         );
+
+        if (!hasToken) {
+            this.subscribeStates('*');
+            this.discoveryOnlyInterval = setInterval(() => {}, 60 * 60 * 1000);
+            return;
+        }
 
         //create new miio class
         Miio = new miio(this);
