@@ -258,11 +258,6 @@
                 let $getDevices = $('#getDevices');
                 let $captcha= $('#captcha');
 
-                if (!active) {
-                    console.log("Not_active");
-                    showToast(_('Please activate instance'));
-                    return;
-                }
                 $getDevices.addClass('disabled');
                 $('#loader1').removeClass('seenot');
                 let pass = $('#password').val();
@@ -292,9 +287,9 @@
                 }, function (result) {
                     //console.log(JSON.stringify(result));
                     if (result.err) {
-                        if (result.captchaUrl) {
-                            $('#captchaImg').attr("src", result.captchaUrl).removeClass('seenot');
-                            $captcha.attr("value", '').parent().removeClass('seenot');
+                        if (result.captchaUrl || result.captchaImage) {
+                            $('#captchaImg').attr("src", result.captchaImage || result.captchaUrl).removeClass('seenot');
+                            $captcha.val('').parent().removeClass('seenot');
                             showToast(_('Please solve captcha'));
                             authObj = result;
                         } 
