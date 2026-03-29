@@ -1,14 +1,17 @@
 {
-  "name": "iobroker.mihome-vacuum",
-  "version": "5.3.0",
-  "description": "Control your mihome vacuum cleaner with ioBroker",
+  "name": "iobroker.mihome-vacuum-ai",
+  "version": "5.3.1-alpha.0",
+  "description": "Control your mihome vacuum cleaner with ioBroker (AI test fork with Dreame/X20 Max support)",
   "keywords": [
+    "dreame",
     "ioBroker",
-    "mihome-vacuum"
+    "mihome-vacuum",
+    "mihome-vacuum-ai",
+    "xiaomi"
   ],
-  "homepage": "https://github.com/iobroker-community-adapters/ioBroker.mihome-vacuum",
+  "homepage": "https://github.com/di3t0/ioBroker.mihome-vacuum-ai",
   "bugs": {
-    "url": "https://github.com/iobroker-community-adapters/ioBroker.mihome-vacuum/issues"
+    "url": "https://github.com/di3t0/ioBroker.mihome-vacuum-ai/issues"
   },
   "license": "MIT",
   "author": {
@@ -18,7 +21,7 @@
   "main": "main.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/iobroker-community-adapters/ioBroker.mihome-vacuum"
+    "url": "https://github.com/di3t0/ioBroker.mihome-vacuum-ai"
   },
   "scripts": {
     "test:js": "mocha --config test/mocha.custom.json \"{!(node_modules|test)/**/*.test.js,*.test.js,test/**/test!(PackageFiles|Startup).js}\"",

@@ -1,7 +1,7 @@
 {
   "common": {
-    "name": "mihome-vacuum",
-    "version": "5.3.0",
+    "name": "mihome-vacuum-ai",
+    "version": "5.3.1-alpha.0",
     "news": {
       "5.3.0": {
         "en": "update dependecies\nreplace request with axios\nfix login issues by replacing and moving code to XiaomiCloudConnector",
@@ -93,10 +93,23 @@
         "pl": "dostosować zasoby Materiały eksploatacyjne do zanurzenia\nfix url # 886",
         "uk": "адаптивний запас Здатні мрії\nзафіксувати виворіт #886",
         "zh-cn": "调整存量 做梦的消耗品\n修复url #886"
+      },
+      "5.3.1-alpha.0": {
+        "en": "Test fork metadata rename for standalone installation; adds Xiaomi X20 Max / Dreame map groundwork.",
+        "de": "Test-Fork-Metadaten für eigenständige Installation umbenannt; ergänzt die Grundlage für Xiaomi X20 Max / Dreame-Karten.",
+        "ru": "Метаданные тестового форка переименованы для автономной установки; добавлена основа поддержки карт Xiaomi X20 Max / Dreame.",
+        "pt": "Metadados do fork de teste renomeados para instalação independente; adiciona a base para mapas Xiaomi X20 Max / Dreame.",
+        "nl": "Metadata van testfork hernoemd voor zelfstandige installatie; voegt basis toe voor Xiaomi X20 Max / Dreame-kaarten.",
+        "fr": "Métadonnées du fork de test renommées pour une installation autonome ; ajoute la base pour les cartes Xiaomi X20 Max / Dreame.",
+        "it": "Metadati del fork di test rinominati per installazione autonoma; aggiunge la base per le mappe Xiaomi X20 Max / Dreame.",
+        "es": "Metadatos del fork de prueba renombrados para instalación independiente; agrega la base para mapas Xiaomi X20 Max / Dreame.",
+        "pl": "Zmieniono metadane testowego forka do samodzielnej instalacji; dodano podstawę dla map Xiaomi X20 Max / Dreame.",
+        "uk": "Метадані тестового форку перейменовано для автономного встановлення; додано основу для мап Xiaomi X20 Max / Dreame.",
+        "zh-cn": "测试分支元数据已重命名以便独立安装；增加了小米 X20 Max / Dreame 地图支持的基础。"
       }
     },
     "titleLang": {
-      "en": "Control of Xiaomi/Roborock vacuum cleaner",
+      "en": "Control of Xiaomi/Roborock vacuum cleaner (AI test fork)",
       "de": "Steuerung des Staubsaugers Xiaomi/Roborock",
       "ru": "Управление пылесосом Xiaomi/Roborock",
       "pt": "Controle do aspirador Xiaomi/Roborock",
@@ -109,7 +122,7 @@
       "zh-cn": "小米/罗伯克吸尘器的控制"
     },
     "desc": {
-      "en": "This adapter allows control Xiaomi vacuum cleaner",
+      "en": "This test adapter allows control of Xiaomi vacuum cleaners and experimental Dreame/X20 Max map support",
       "de": "Dieser Adapter ermöglicht die Steuerung Xiaomi Staubsauger",
       "ru": "Этот адаптер позволяет контролировать пылесос Xiaomi",
       "pt": "Este adaptador permite controle Xiaomi aspirador de pó",
@@ -145,14 +158,14 @@
     "loglevel": "info",
     "compact": true,
     "icon": "mihome-vacuum.png",
-    "readme": "https://github.com/iobroker-community-adapters/ioBroker.mihome-vacuum/blob/master/README.md",
+    "readme": "https://github.com/di3t0/ioBroker.mihome-vacuum-ai/blob/master/README.md",
     "keywords": [
       "url",
       "html",
       "file",
       "mihome-vacuum"
     ],
-    "extIcon": "https://raw.githubusercontent.com/iobroker-community-adapters/ioBroker.mihome-vacuum/master/admin/mihome-vacuum.png",
+    "extIcon": "https://raw.githubusercontent.com/di3t0/ioBroker.mihome-vacuum-ai/master/admin/mihome-vacuum.png",
     "type": "household",
     "messagebox": true,
     "connectionType": "local",
@@ -170,7 +183,7 @@
     ],
     "plugins": {
       "sentry": {
-        "dsn": "https://b93cc849b5544d1682e20820bf56d636@sentry.iobroker.net/46"
+        "dsn": ""
       }
     }
   },
